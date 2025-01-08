@@ -12,6 +12,15 @@
             font-family: Arial, sans-serif;
             max-width: 800px;
             margin: auto;
+            box-sizing: border-box;
+        }
+
+        /* Heading */
+        .testimonial-section h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
         }
 
         /* Individual Testimonial Box */
@@ -19,7 +28,7 @@
             background-color: #fff;
             border: 1px solid #ddd;
             padding: 15px;
-            margin: 10px 0;
+            margin: 15px 0; /* Adjusted margin for spacing */
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -27,8 +36,9 @@
         /* Testimonial Text */
         .testimonial-text {
             font-size: 16px;
-            line-height: 1.5;
+            line-height: 1.6; /* Slightly increased line height for readability */
             color: #333;
+            margin-bottom: 10px;
         }
 
         /* Author */
@@ -37,7 +47,19 @@
             font-style: italic;
             font-size: 14px;
             color: #555;
-            margin-top: 10px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .testimonial {
+                padding: 10px;
+            }
+            .testimonial-text {
+                font-size: 14px;
+            }
+            .testimonial-author {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
